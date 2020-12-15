@@ -6,36 +6,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Icon } from 'react-native-elements';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-import Home from './src/Navigators/HomeStack'
 import Colors from './src/Assets/Colors'
+import HomeStack from './src/Navigators/HomeStack';
 
 const {width , height} = Dimensions.get('window');
 
-function MyHeader() {
-  return (
-    <View style={styles.header}>
-      <View style={styles.headerImagesContainer}>
-        <Image
-          style={{width: width/9.85, height: width/9.85 , borderRadius:width/13.7 }}
-          source={require('./src/Assets/menu-outline.png')}
-        />
-      </View>
-
-      <View style={styles.headerTitleContainer}>
-        <Text  style={styles.headerText}>Home</Text>
-      </View>
-      
-      <View style={styles.headerImagesContainer}>
-        <Image
-          style={{ width: width/6.85, height: width/6.85 , borderRadius:width/13.7 }}
-          source={require('./src/Assets/profile.jpg')}
-        />
-      </View>
-
-    </View>
-
-  );
-}
 
 const SettingsStack = createStackNavigator();
 
@@ -43,20 +18,13 @@ function App() {
   return ( 
     <NavigationContainer>
     <SettingsStack.Navigator
-    // headerMode = "screen"
-    // screenOptions={{
-    //   headerStyle: {
-    //     height:height/8.5 ,
-    //   },
-    //   header: props => <MyHeader {...props} />
-    // }}
     screenOptions={{
       headerShown: false
     }}
   >
       <SettingsStack.Screen
-        name="Home"
-        component={Home}
+        name="HomeStack"
+        component={HomeStack}
       />
     </SettingsStack.Navigator>
     </NavigationContainer>
@@ -72,7 +40,6 @@ const styles = StyleSheet.create({
     backgroundColor:Colors.primaryColor
   } , 
   headerText :{
-    // marginTop :width/13.7 , 
     fontSize : width/20 , 
     color : Colors.textColor
   } , 
@@ -89,6 +56,4 @@ const styles = StyleSheet.create({
     height :height/11 , 
   },
 });
-
-
 export default App;
