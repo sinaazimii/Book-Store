@@ -1,5 +1,5 @@
 import React, {useState , useEffect} from 'react';
-import { Text, View , Dimensions,StyleSheet , Image , TouchableOpacity} from 'react-native';
+import { Text, View , Dimensions,StyleSheet , ImageBackground , TouchableOpacity} from 'react-native';
 import  Colors  from '../Assets/Colors'
 import ChangableInput from '../Components/Login/InputBox'
 
@@ -10,8 +10,12 @@ function Login({ navigation }) {
     const [email,setEmail] = useState("Email Address")
     const [password,setPassword] = useState('Password')
     return (
-      <View style={styles.page}>
+      <ImageBackground source={require('../Assets/login-back.png')} style={styles.page}>
             <View style={{flex:3/5}}>
+                <View style={{flex:1/2,width:width,justifyContent:'center'}}>
+                    <Text style={styles.welcome}>Welcome</Text>
+                    <Text style={styles.welcome}>Back!</Text>
+                </View>
 
             </View>
             <View style={{flex:1/5}}>
@@ -50,7 +54,7 @@ function Login({ navigation }) {
                 </View>
 
             </View>
-      </View>
+      </ImageBackground>
     );
   }
 
@@ -105,6 +109,11 @@ const styles = StyleSheet.create({
     login :{
         color:Colors.secondTextColor,
         fontSize:width/20
+    },
+    welcome:{
+        fontSize:width/12 , 
+        marginLeft:width*0.05 ,
+        color: Colors.primaryColor
     }
   });
  export default Login;

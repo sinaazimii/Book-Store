@@ -2,16 +2,18 @@ import react from 'react';
 import * as React from 'react';
 import { Button, Text, View , Dimensions , FlatList ,StyleSheet , TouchableOpacity , Image, Alert } from 'react-native';
 import Colors from '../../Assets/Colors'
-import {Icon} from 'react-native-elements'
+import {Badge, Icon, withBadge } from 'react-native-elements'
 const {width , height} = Dimensions.get('window');
 
 const saveBook = (navigation) => {
   
 }
 const addToCart = (navigation) => {
-  
+  /////add to cart
+  navigation.navigate('ShoppingCart')
 }
 function BookHeader({navigation}) {
+  const BadgedIcon = withBadge(3)(Icon)
     return (
       <View style={styles.header}>
 
@@ -23,9 +25,11 @@ function BookHeader({navigation}) {
             size={width/11.2}
             onPress={()=>navigation.goBack()}
           />
+          
         </View>
         <View style={styles.cartContainer}>
-        <Icon
+        <BadgedIcon
+            badgeStyle={{color:'blue'}}
             name='cart-outline'
             type='ionicon'
             color= {Colors.textColor}
@@ -78,6 +82,9 @@ header : {
     alignItems:'flex-end',
     marginRight : -width/10
 }, 
+  badge:{
+    color:'yellow'
+  }
 });
   
   

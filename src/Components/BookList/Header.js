@@ -29,11 +29,11 @@ const styles = StyleSheet.create({
       alignItems: 'flex-start' , 
       flexDirection : 'row' ,
       display : 'flex' , 
-      backgroundColor:Colors.primaryColor,
+      backgroundColor:Colors.secondaryColor,
       alignItems:'center' , 
       width:width,
       justifyContent :'flex-start',
-      elevation:3
+      elevation:3,
   } , 
   backContainer: { 
       flex: 1/2 , 

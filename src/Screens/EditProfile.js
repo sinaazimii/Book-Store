@@ -16,23 +16,24 @@ const defaultPickerOptions = {
 const {width , height} = Dimensions.get('window');
 //392.72, 759.27
 
-const ChangableInput =  ({placeholder,label,apply}) => {
+const ChangableInput =  ({placeholder,label,apply,secure}) => {
     const [text,setText] = useState('')
     return(
         <Input
         containerStyle={{width:width*95/100,marginLeft:width*5/200}}
         placeholder={placeholder}
         label={label}
-        labelStyle={{color:Colors.textColor}}
+        secureTextEntry={secure}
+        labelStyle={{color:Colors.textColor}} 
         style={styles.username}
         onChangeText={text => setText(text)}
         // value={text}
         inputStyle={{color:Colors.secondTextColor}}
-        rightIcon={
-            <TouchableOpacity onPress={() => apply(text)}>
-                <Image style={{width:18,height:18}} source={require('../Assets/check.png')} ></Image>
-            </TouchableOpacity>
-        }
+        // rightIcon={
+        //     <TouchableOpacity onPress={() => apply(text)}>
+        //         <Image style={{width:18,height:18}} source={require('../Assets/check.png')} ></Image>
+        //     </TouchableOpacity>
+        // }
         />
     );
 }
@@ -122,6 +123,7 @@ function EditProfile({ navigation }) {
                     placeholder={password}
                     label="Password"
                     apply={setPassword}
+                    secure={true}
                 />
             </View>
 

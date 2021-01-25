@@ -5,24 +5,24 @@ import Colors from '../../Assets/Colors'
 
 const {width , height} = Dimensions.get('window');
 //392.72, 759.27
-function Details({add}) {
+function Details({book}) {
     return (
       <View style={styles.DetailsContainer} >
             <View style={styles.poster}>
-                <Image style={styles.cover} source={require('../../Assets/cover.jpg')} ></Image>
+                <Image style={styles.cover} source={book.src} ></Image>
             </View>
             <View style={styles.name}>
-                <Text style={styles.title}>Beach Town: Apocalypse</Text>
-                <Text style={styles.author}>by Thomas Maxwell Harrison</Text>
+                <Text style={styles.title}>{book.title}</Text>
+                <Text style={styles.author}>{book.author}</Text>
             </View>
             <View style={styles.specs}>
                 <View style={styles.eachSpec}>
                     <Text style={styles.specQ}>Rating</Text>
-                    <Text style={styles.value}>4.7</Text>
+                    <Text style={styles.value}>{book.rating}</Text>
                 </View>
                 <View style={styles.eachSpec}>
                     <Text style={styles.specQ}>Pages</Text>
-                    <Text style={styles.value}>256</Text>
+                    <Text style={styles.value}>{book.pages}</Text>
                 </View>
                 <View style={styles.eachSpec}>
                     <Text style={styles.specQ}>Language</Text>
@@ -30,7 +30,7 @@ function Details({add}) {
                 </View>
                 <View style={styles.eachSpec}>
                     <Text style={styles.specQ}>Price</Text>
-                    <Text style={styles.value}>$4.99</Text>
+                    <Text style={styles.value}>{book.price}</Text>
                 </View>
             </View>
         

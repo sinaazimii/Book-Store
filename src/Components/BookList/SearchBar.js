@@ -29,18 +29,17 @@ function SearchBar({ navigation }) {
 
 const styles = StyleSheet.create({
     listContainer: {
-        flex:1.1/10 ,
-        backgroundColor:Colors.primaryColor ,
+        flex:1.4/10 ,
+        backgroundColor:Colors.secondaryColor ,
         width:width,
         justifyContent:'center' ,
         alignItems:'center' ,    
     },
     searchSection: {
-        flex: 0.55,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: Colors.secondaryColor,
+        backgroundColor: Colors.primaryColor,
         borderRadius : 15,
         width:width/1.22,
         elevation:3,

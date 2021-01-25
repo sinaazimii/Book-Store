@@ -37,9 +37,6 @@ const styles = StyleSheet.create({
         backgroundColor:Colors.secondaryColor,
         alignItems:'center',
         width:width , 
-        borderBottomRightRadius:15 ,
-        borderBottomLeftRadius:15 ,
-        elevation:3
     },
     poster : {
         flex : 4/10 ,

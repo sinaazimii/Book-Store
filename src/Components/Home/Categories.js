@@ -7,7 +7,7 @@ import Colors from '../../Assets/Colors'
 const {width , height} = Dimensions.get('window');
 
 const list = [
-    ['Motiation & inspiration',require('../../Assets/motivation.png')] , 
+    ['Motivation & inspiration',require('../../Assets/motivation.png')] , 
     ['History',require('../../Assets/history.png')],
     ['Health & Nutrition' , require('../../Assets/heart.png') ], 
     ['Science' , require('../../Assets/test.png')],
@@ -15,7 +15,7 @@ const list = [
 ]
 const list1 = [
     ['Psychology',require('../../Assets/brain.png')],
-    ['Money & invesment',require('../../Assets/save-money.png')] ,
+    ['Money & investment',require('../../Assets/save-money.png')] ,
     ['Family & Relationships',require('../../Assets/home.png')],
     ['Romance',require('../../Assets/hearts.png')],
     ['Travel',require('../../Assets/plane.png')],
@@ -47,7 +47,7 @@ function Categories({ navigation }) {
         </View>
         <View style={{flex:3.5/5}}>
         <FlatList
-            style={{marginTop:height/100}}
+            style={{marginTop:height/100,marginRight:width/40}}
             data={list}
             renderItem={renderItem}
             keyExtractor={item => item[0]}
@@ -55,7 +55,7 @@ function Categories({ navigation }) {
             showsHorizontalScrollIndicator={false}
         />
         <FlatList
-            style={{marginTop:height/100}}
+            style={{marginTop:height/100,marginRight:width/40}}
             data={list1}
             renderItem={renderItem}
             keyExtractor={item => item[0]}

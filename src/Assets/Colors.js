@@ -19,8 +19,8 @@ const Colors = {
     primaryColor: '#0c101e' , 
     secondaryColor : '#465165',
     textColor : '#b3d2de',
-    secondTextColor : '#b4bac6'
-
+    secondTextColor : '#b4bac6' ,
+    primaryOp : '#110c1e'
     //Zone Dark
     // primaryColor: '#04040a' , 
     // secondaryColor : '#3c2b45',

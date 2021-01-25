@@ -18,16 +18,7 @@ function Header({navigation}) {
             onPress={()=>navigation.goBack()}
           />
         </View>
-        
-        <View style={styles.bookmarkContainer}>
-          <Icon
-            name='create-outline'
-            type='ionicon'
-            color= {Colors.textColor}
-            size={width/11.2}
-            onPress={()=>navigation.navigate('EditProfile')}
-          />
-        </View>
+    
       </View>
     );
 }
@@ -42,7 +33,6 @@ header : {
     alignItems:'center' , 
     width:width,
     justifyContent :'flex-start',
-    elevation:3
 } , 
 backContainer: { 
     flex: 1/2 , 

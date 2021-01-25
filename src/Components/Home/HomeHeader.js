@@ -38,29 +38,29 @@ function MyHeader({navigation}) {
 }
 
 const styles = StyleSheet.create({
-header : { 
-    flex:0.8/10,  
-    alignItems: 'flex-start' , 
-    flexDirection : 'row' ,
-    display : 'flex' , 
-    backgroundColor:Colors.primaryColor ,
-} , 
-headerText :{
-    fontSize : width/20 , 
-    color : Colors.textColor
-} , 
-headerImagesContainer: { 
-    flex: 1/5 , 
-    alignItems : 'center', 
-    justifyContent :'center' ,
-    height :height/11 , 
-}, 
-headerTitleContainer: { 
-    flex: 3/5 , 
-    alignItems : 'center', 
-    justifyContent :'center' ,
-    height :height/11 , 
-},
+  header : { 
+      flex:0.8/10,  
+      alignItems: 'flex-start' , 
+      flexDirection : 'row' ,
+      display : 'flex' , 
+      backgroundColor:Colors.primaryColor ,
+  } , 
+  headerText :{
+      fontSize : width/20 , 
+      color : Colors.textColor
+  } , 
+  headerImagesContainer: { 
+      flex: 1/5 , 
+      alignItems : 'center', 
+      justifyContent :'center' ,
+      height :height/11 , 
+  }, 
+  headerTitleContainer: { 
+      flex: 3/5 , 
+      alignItems : 'center', 
+      justifyContent :'center' ,
+      height :height/11 , 
+  },
 });
   
   

@@ -9,12 +9,13 @@ import About from '../Components/Book/AboutBook'
 
 const {width , height} = Dimensions.get('window');
 //392.72, 759.27
-function Book({ navigation }) {
+function Book({ navigation , route}) {
+    console.log("ROUTE :",route.params)
     const [search,setSearch] = React.useState('')
     return (
       <View style={styles.page}>
       <Header navigation={navigation}/>
-      <Details/>    
+      <Details book={route.params}/>    
       <About/>  
       </View>
     );

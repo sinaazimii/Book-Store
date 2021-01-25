@@ -9,6 +9,9 @@ import Book from '../Screens/Book'
 import Profile from '../Screens/Profile'
 import EditProfile from '../Screens/EditProfile';
 import BookList from '../Screens/BookList'
+import ShoppingCart from '../Screens/ShoppingCart';
+import ShoppingAddress from '../Screens/ShoppingAddress';
+import CreditCard from '../Screens/CreditCard';
 
 const MyStack = createStackNavigator();
 
@@ -21,6 +24,9 @@ function HomeInnerStack() {
       <MyStack.Screen name="Profile" component={Profile} />
       <MyStack.Screen name="EditProfile" component={EditProfile} />
       <MyStack.Screen name="BookList" component={BookList}/>
+      <MyStack.Screen name="ShoppingCart" component={ShoppingCart}/>
+      <MyStack.Screen name="ShoppingAddress" component={ShoppingAddress}/>
+      <MyStack.Screen name="CreditCard" component={CreditCard}/>
     </MyStack.Navigator>
   );
 }

@@ -7,22 +7,24 @@ import Colors from '../../Assets/Colors'
 const {width , height} = Dimensions.get('window');
 //392.72, 759.27
 const list = [
-    ['Motiation & inspiration',require('../../Assets/cover.jpg'),1] , 
-    ['History',require('../../Assets/poster.png'),2],
-    ['Science' , require('../../Assets/cover.jpg'),3],
-    ['Education' , require('../../Assets/poster.png'),4],
+    ['The Vanishing Half',require('../../Assets/cover1.jpg'),1,"Brit Bennett","4.5","312","$4.99"] , 
+    ['The Office of Historical Corrections' , require('../../Assets/cover5.png'),2,"Danielle Evans","3.8","80","$6.99"],
+    ['A Burning' , require('../../Assets/cover2.jpg'),3,"Megha Majumdar","3.2","110","$5.00"],
+    ['Sharks in the Time of Saviors' , require('../../Assets/cover3.jpg'),4,"Kawai Strong Washburn","4.7","200","$9.99"],
+    ['Caste: The Origins of Our Discontents',require('../../Assets/cover.jpg'),5,"Isabel Wilkerson","3","250","$8.5"],
 ]
 
-function hadndleOptions(id,navigation){
-    navigation.navigate('Book',id={id})
+function hadndleOptions(title,src,id,author,price,pages,rating,navigation){
+  console.log("NoW NAVIGATING")
+    navigation.navigate('Book',{id,title,src,author,price,pages,rating})
     return;
 }
 
 function Trending({ navigation }) {
-    const Item = ({title , src , id}) => (
+    const Item = ({title , src , id, price, pages, rating, author}) => (
         <View style={{flexDirection: 'column'}}>
             <TouchableOpacity  style={styles.touchContainer}
-             onPress={() => hadndleOptions(id,navigation)}>
+             onPress={() => hadndleOptions(title,src,id,author,price,pages,rating,navigation)}>
             <View style={styles.card}>
                 <Image style={styles.icon} source={src}></Image>
                 <Text style={styles.text}>{title}</Text>
@@ -31,7 +33,7 @@ function Trending({ navigation }) {
         </View>
     );
     const renderItem = ({ item }) => (
-        <Item title={item[0]} src={item[1]} id={item[2]}/>
+        <Item title={item[0]} src={item[1]} id={item[2]} author={item[3]} rating={item[4]} pages={item[5]} price={item[6]}/>
     );
     return (
       <View style={styles.listContainer}>

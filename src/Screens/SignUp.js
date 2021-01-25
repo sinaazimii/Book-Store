@@ -1,5 +1,5 @@
 import React, {useState , useEffect} from 'react';
-import { Text, View , Dimensions,StyleSheet , Image , TouchableOpacity} from 'react-native';
+import { Text, View , Dimensions,StyleSheet , ImageBackground , TouchableOpacity} from 'react-native';
 import  Colors  from '../Assets/Colors'
 import ChangableInput from '../Components/Login/InputBox'
 
@@ -13,9 +13,12 @@ function SignUp({ navigation }) {
     const [username,setUsername] = useState("Username")
     const [phoneNumber,setPhoneNumber] = useState("Phone Number")
     return (
-      <View style={styles.page}>
+      <ImageBackground source={require('../Assets/signup-back1.png')} style={styles.page}>
             <View style={{flex:1.8/5}}>
-
+                <View style={{flex:1/2,width:width,justifyContent:'center'}}>
+                    <Text style={styles.welcome}>Create</Text>
+                    <Text style={styles.welcome}>Account</Text>
+                </View>
             </View>
             <View style={{flex:2.5/5}}>
                 <ChangableInput
@@ -63,7 +66,7 @@ function SignUp({ navigation }) {
                         <Text style={styles.clickableText}>   Sign in</Text>
                     </TouchableOpacity>
             </View>
-      </View>
+      </ImageBackground>
     );
   }
 
@@ -123,6 +126,11 @@ const styles = StyleSheet.create({
     login :{
         color:Colors.secondTextColor,
         fontSize:width/20
+    },
+    welcome:{
+        fontSize:width/12 , 
+        marginLeft:width*0.05 ,
+        color: Colors.primaryColor
     }
   });
  export default SignUp;

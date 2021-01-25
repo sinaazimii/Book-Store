@@ -8,15 +8,16 @@ const {width , height} = Dimensions.get('window');
 //392.72, 759.27
 const list = [
     ['John Doe',require('../../Assets/images.jpg')] , 
-    ['John Doe Brother',require('../../Assets/images1.jpg')],
-    ['John Doe Sister',require('../../Assets/images2.jpg')],
-    ['Andrew',require('../../Assets/images3.jpg')],
-    ['Micheal',require('../../Assets/images4.jpg')],
-    ['Joe',require('../../Assets/images.jpg')] , 
+    ['Anthony Doerr',require('../../Assets/images1.jpg')],
+    ['Fredrik Backman',require('../../Assets/images2.jpg')],
+    ['Ruth Ware',require('../../Assets/images3.jpg')],
+    ['Stephan King',require('../../Assets/images4.jpg')],
+    ['Yann Martel',require('../../Assets/images.jpg')] , 
 ]
 
 function hadndleOptions(title,navigation){
-  navigation.navigate('BookList',{title:title})
+  const pageTitle = "Books by " + title
+  navigation.navigate('BookList',{title:pageTitle})
     return;
 }
 
