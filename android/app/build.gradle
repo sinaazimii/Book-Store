@@ -150,6 +150,7 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        //Release
     }
     buildTypes {
         debug {

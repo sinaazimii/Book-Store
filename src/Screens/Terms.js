@@ -9,7 +9,6 @@ const {width , height} = Dimensions.get('window');
 function Terms({ navigation }) {
     return (
       <View style={styles.page}>
-
       </View>
     );
   }

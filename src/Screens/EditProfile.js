@@ -93,7 +93,7 @@ function EditProfile({ navigation }) {
                 <TouchableOpacity
                  onPress={()=>changeProfilePicture(chooseFromCamera,chooseFromPicker)
                  }> 
-                <Text style={styles.changeText}>Chanage Profile Photo</Text>
+                <Text style={styles.changeText}>Change Profile Photo</Text>
                 </TouchableOpacity>
                 
             </View>

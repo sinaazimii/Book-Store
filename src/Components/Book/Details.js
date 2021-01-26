@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     title:{
         color:Colors.textColor,
         fontWeight:'bold' ,
-        fontSize:width/18.7
+        fontSize:width/20
     },
     author:{
         color:Colors.textColor ,
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
         justifyContent:'center'
     },
     addToCart:{
-        width:width/2.5,
+        width:width/3,
         height:height/15,
         backgroundColor:Colors.textColor ,
         marginTop:(0.06*height) -(height/30),
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
     },
     addText:{
         color:Colors.primaryColor,
-        fontSize:width/20
+        fontSize:width/23
     },
 });
   

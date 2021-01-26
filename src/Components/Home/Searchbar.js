@@ -13,7 +13,7 @@ function SearchBar({ navigation }) {
     return (
       <View style={styles.listContainer}>
         <View style={styles.searchSection}>
-            <Icon style={styles.searchIcon} type='ionicon' name='search-outline' size={25} color="#fff"/>
+            <Icon style={styles.searchIcon} type='ionicon' name='search-outline' size={width/13} color="#fff"/>
             <TextInput
                 style={styles.input}
                 placeholder="Titles, authors, or topics"

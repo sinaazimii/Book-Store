@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
     backgroundColor:Colors.primaryColor
   },
   icon :{
-    width:width/5.6,
-    height: width/5.6,
+    width:width/6.5,
+    height: width/6.5,
     borderRadius : width/5.6/2 ,
     borderWidth :2 , 
     borderColor : Colors.secondTextColor
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
   }, 
   title : {
     fontWeight : "bold" ,
-    fontSize:width/16,
+    fontSize:width/19,
     color:Colors.textColor
   }, 
   });

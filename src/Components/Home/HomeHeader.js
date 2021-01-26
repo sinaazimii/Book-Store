@@ -14,7 +14,7 @@ function MyHeader({navigation}) {
             name='menu-outline'
             type='ionicon'
             color= {Colors.textColor}
-            size={width/10}
+            size={width/13}
             onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
           />
         </View>
@@ -26,7 +26,7 @@ function MyHeader({navigation}) {
         <View style={styles.headerImagesContainer}>
           <TouchableOpacity onPress={()=>navigation.navigate('Profile')}>
           <Image
-            style={{ width: width/6.85, height: width/6.85 , borderRadius:width/13.7 }}
+            style={{ width: width/7.5, height: width/7.5 , borderRadius:width/13.7 }}
             source={require('../../Assets/profile.jpg')}
           />
           </TouchableOpacity>

@@ -14,4 +14,4 @@ function AuthorizationStack() {
   );
 }
 
-export default AuthorizationStack; 
+export default AuthorizationStack;  

@@ -14,7 +14,7 @@ function Header({navigation,title}) {
             name='arrow-back-outline'
             type='ionicon'
             color= {Colors.textColor}
-            size={30}
+            size={width/13}
             onPress={()=>navigation.goBack()}
           />
         </View>

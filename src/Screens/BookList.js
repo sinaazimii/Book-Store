@@ -54,7 +54,7 @@ const BookList = ({navigation,route}) => {
             <Header title={route.params.title} navigation={navigation}/>
             <SearchBar/>
             <FlatList
-                style={{flex:7.6/10,marginBottom:height/26}}
+                style={{flex:7.6/10,marginBottom:height/35}}
                 data={list}
                 renderItem={renderItem}
                 keyExtractor={item => item[2]}
@@ -71,7 +71,8 @@ const styles = StyleSheet.create({
         height : height , 
         width:width ,
         alignItems:'center',
-        backgroundColor : Colors.secondaryColor
+        backgroundColor : Colors.secondaryColor,
+        flex:1
     },
     header : { 
         flex : 1/10 ,
@@ -104,41 +105,6 @@ const styles = StyleSheet.create({
       fontSize : width/20 , 
       color : Colors.textColor , 
     },
-    card :{
-        elevation:3, 
-        width:width*46/100,
-        height:height/2.7,
-        margin:width/80,
-        marginTop:height/76,
-        borderRadius:20,
-        backgroundColor:Colors.primaryColor,
-        borderColor:Colors.secondaryColor,
-        alignItems:'center'
-    },
-    cover :{
-        height:height/6,
-        width:width/4 ,
-        borderRadius:width/65,
-        marginTop:height/90
-    },
-    bookTitle :{
-        fontSize :width/24,
-        color : Colors.textColor , 
-        marginTop : height/76,
-        flex:1/3 ,
-        textAlign:'center'
-    },
-    bookAuthor :{
-        fontSize:width/21.7 ,
-        color : Colors.secondTextColor ,
-        flex:1/3 ,        
-        textAlign:'center'
-    },
-    price : {
-        fontSize: width/25, 
-        color:Colors.secondTextColor,
-    },
-    ///////////////////
     card2 :{
         flexDirection: 'row',
         elevation:3,
@@ -155,15 +121,16 @@ const styles = StyleSheet.create({
         borderRadius:width/65,
     },
     bookTitle2 :{
-        fontSize :width/21,
+        fontSize :width/22,
         color : Colors.textColor , 
         marginTop : height/76,
         flex:2/4 ,
+        marginTop:width/20,
         width :width/1.65,
 
     },
     bookAuthor2 :{
-        fontSize:width/21.7 ,
+        fontSize:width/22.5 ,
         color : Colors.secondTextColor ,
         marginTop : height/150 ,
         flex:1/4 ,        

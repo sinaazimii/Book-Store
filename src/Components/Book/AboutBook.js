@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   title :{
     marginLeft : width/39 , 
     fontWeight:'bold' , 
-    fontSize: width/19.5 , 
+    fontSize: width/21 , 
     color : Colors.secondTextColor
   } , 
   caption :{

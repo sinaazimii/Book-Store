@@ -12,7 +12,8 @@ import BookList from '../Screens/BookList'
 import ShoppingCart from '../Screens/ShoppingCart';
 import ShoppingAddress from '../Screens/ShoppingAddress';
 import CreditCard from '../Screens/CreditCard';
-
+import OrderHistory from '../Screens/OrderHistory'
+import PrevCart from '../Screens/PrevCart'
 const MyStack = createStackNavigator();
 
 
@@ -27,6 +28,8 @@ function HomeInnerStack() {
       <MyStack.Screen name="ShoppingCart" component={ShoppingCart}/>
       <MyStack.Screen name="ShoppingAddress" component={ShoppingAddress}/>
       <MyStack.Screen name="CreditCard" component={CreditCard}/>
+      <MyStack.Screen name="OrderHistory" component={OrderHistory}/>
+      <MyStack.Screen name="PrevCart" component={PrevCart}/>
     </MyStack.Navigator>
   );
 }

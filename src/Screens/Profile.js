@@ -19,6 +19,7 @@ const ProfileItem = ({icon,title,navigation,route}) => {
         type="ionicon"
         name={icon}
         color={Colors.textColor}
+        size={width/17}
         />
       </View>
       <View style={{flex:8/10,alignItems:'flex-start',justifyContent:'center'}}>
@@ -72,7 +73,7 @@ function Profile({ navigation }) {
               title={'Order History'}
               icon={'receipt'}       
               navigation={navigation} 
-              route={'BookList'}/>
+              route={'OrderHistory'}/>
 
               <ProfileItem 
               title={'Credit Card'}
@@ -102,7 +103,7 @@ const styles = StyleSheet.create({
   itemText:{
     color:Colors.textColor , 
     marginLeft:width/20,
-    fontSize:width/23
+    fontSize:width/25
   }
   });
  export default Profile;

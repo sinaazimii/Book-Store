@@ -57,7 +57,7 @@ function About({ navigation }) {
                 name='menu-outline'
                 type='ionicon'
                 color= {Colors.textColor}
-                size={width/10}
+                size={width/13}
                 onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
             />
             </View>
@@ -91,7 +91,7 @@ function About({ navigation }) {
                 type='ionicon'
                 name='logo-linkedin'
                 color={Colors.secondTextColor}
-                size={width/10}
+                size={width/12}
                 onPress={()=>openLinkedin()}
                 />
         </View>
@@ -100,7 +100,7 @@ function About({ navigation }) {
                 type='ionicon'
                 name='mail'
                 color={Colors.secondTextColor}
-                size={width/10}
+                size={width/12}
                 onPress={()=>sendEmail()}
                 />
         </View>

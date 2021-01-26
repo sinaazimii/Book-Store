@@ -29,19 +29,7 @@ const ShoppingCart = ({navigation}) => {
             <View style={{flex:0.5/4,flexDirection:'row'}}>
                 <View style={{flex:1/6,height:(height/9)+(width*2/25)}}></View>
                 <View style={styles.countContainer}>
-                    <Icon
-                        type="ioncion"
-                        name='add-circle'
-                        color={Colors.secondTextColor}
-                        size={width/16}
-                    />
                     <Text style={styles.countText}>x{count}</Text>
-                    <Icon
-                        type="ionicon"
-                        name='remove-circle'
-                        color={Colors.secondTextColor}
-                        size={width/16}
-                    />
                 </View>
             </View>
         </View>
@@ -79,14 +67,8 @@ const ShoppingCart = ({navigation}) => {
                 </View>
 
                 <View style={{flexDirection:'row',flex:1/2,justifyContent:'center',alignItems:'center'}}>
-                    <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('Home')}>
-                        <Icon
-                            type="ioncion"
-                            name='logout'
-                            color={Colors.secondTextColor}
-                            size={width/15}
-                        />
-                        <Text style={styles.checkoutText}>Check Out</Text>
+                    <TouchableOpacity style={styles.button} onPress={()=>navigation.goBack()}>
+                        <Text style={styles.checkoutText}>Done</Text>
                     </TouchableOpacity>
                 </View>
             </View>

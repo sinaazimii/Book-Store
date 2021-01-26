@@ -43,7 +43,7 @@ function Trending({ navigation }) {
             <Text style={styles.seeAll}>See all</Text>
           </TouchableOpacity>
         </View>
-        <View style={{flex:3.8/5}}>
+        <View style={{flex:3.8/5,marginRight:width/70}}>
           <FlatList
               data={list}
               renderItem={renderItem}
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     marginRight : width/28.5 ,
   }, 
   text:{
-    fontSize:width/21.81,
+    fontSize:width/25,
     marginTop:height/150 , 
     textAlign:'center',
     width:width/3.57,
@@ -81,12 +81,12 @@ const styles = StyleSheet.create({
     
   },
   seeAll :  {
-    fontSize:width/19,
+    fontSize:width/24,
     color : Colors.secondTextColor
   },
   title : {
     fontWeight : "bold" ,
-    fontSize:width/16,
+    fontSize:width/19,
     flex : 0.93 ,
     color:Colors.textColor
   }, 

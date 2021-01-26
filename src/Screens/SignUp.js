@@ -13,7 +13,7 @@ function SignUp({ navigation }) {
     const [username,setUsername] = useState("Username")
     const [phoneNumber,setPhoneNumber] = useState("Phone Number")
     return (
-      <ImageBackground source={require('../Assets/signup-back1.png')} style={styles.page}>
+      <ImageBackground source={require('../Assets/back8.jpg')} style={styles.page}>
             <View style={{flex:1.8/5}}>
                 <View style={{flex:1/2,width:width,justifyContent:'center'}}>
                     <Text style={styles.welcome}>Create</Text>
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     welcome:{
         fontSize:width/12 , 
         marginLeft:width*0.05 ,
-        color: Colors.primaryColor
+        color: Colors.textColor
     }
   });
  export default SignUp;

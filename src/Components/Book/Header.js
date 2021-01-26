@@ -22,7 +22,7 @@ function BookHeader({navigation}) {
             name='arrow-back-outline'
             type='ionicon'
             color= {Colors.textColor}
-            size={width/11.2}
+            size={width/13}
             onPress={()=>navigation.goBack()}
           />
           
@@ -33,7 +33,7 @@ function BookHeader({navigation}) {
             name='cart-outline'
             type='ionicon'
             color= {Colors.textColor}
-            size={width/11.2}
+            size={width/14}
             onPress={() => addToCart(navigation)}
           />
         </View>
@@ -42,7 +42,7 @@ function BookHeader({navigation}) {
             name='bookmark-outline'
             type='ionicon'
             color= {Colors.textColor}
-            size={width/11.2}
+            size={width/14}
             onPress={() => saveBook(navigation)}
           />
         </View>

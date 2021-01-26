@@ -10,7 +10,7 @@ function Login({ navigation }) {
     const [email,setEmail] = useState("Email Address")
     const [password,setPassword] = useState('Password')
     return (
-      <ImageBackground source={require('../Assets/login-back.png')} style={styles.page}>
+      <ImageBackground source={require('../Assets/back7.jpg')} style={styles.page}>
             <View style={{flex:3/5}}>
                 <View style={{flex:1/2,width:width,justifyContent:'center'}}>
                     <Text style={styles.welcome}>Welcome</Text>
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     welcome:{
         fontSize:width/12 , 
         marginLeft:width*0.05 ,
-        color: Colors.primaryColor
+        color: Colors.textColor
     }
   });
  export default Login;
